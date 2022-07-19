@@ -29,7 +29,7 @@ $(document).ready(function(){
         $(document).append(captText);
         
        
-      $("#enviar").click(function(e){
+      $("#enviar").click(function(){
         var respuesta = $("#captcha").val();
         var trimCapt = $.trim(capt);
         var trimResp = $.trim(respuesta);
