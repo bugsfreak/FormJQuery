@@ -5,8 +5,10 @@ from flask import Flask, render_template
 #Se asigna un nombre a la variable app asi como tambien se asigna la carpeta templates
 app = Flask(__name__, template_folder='templates')
 
+#Se busca la carpeta que va utilizar la aplicación como static 
 app._static_folder = os.path.abspath("static")
 
+#Se define una ruta que en este caso sera la principal
 @app.route("/")
 def principal():
     #Se retorna la pagina html
